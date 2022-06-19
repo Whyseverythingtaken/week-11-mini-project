@@ -125,6 +125,7 @@ const showErrors = (errorObj) => {
 const submitDiagnostics = async (submissionObj) => {
   // TODO: your code here
   const { errors } = submissionObj;
+  alert("TIP invalid or too short. Please add a valid tip");
 
   const result = await fetch("/api/diagnostics", {
     method: "POST",
